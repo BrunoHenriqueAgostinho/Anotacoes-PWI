@@ -1,0 +1,62 @@
+clear
+-- limpa a linha de comando
+git status
+-- mostra o status do git 
+
+ls -la
+--mostra os status dos arquivos
+
+git config --global user.name
+-- adiciona o nome da pessoa que está usando o git
+
+git config --global user.email
+-- adiciona o e-mail da pessoa que está utilizando o git
+
+git add <nome do arquivo>
+-- começa a monitorar um arquivo
+
+git commit -m "<Descrição das alterações realizadas na alteração>"
+-- comita as alterações realizadas na versão
+
+git clone <URL>
+<repositorio onde serão clonados os arquivos>
+-- clona um git da internet através de um link do github
+
+git log
+-- mostra todas as alterações feitas  em um determinado git
+
+git push
+-- manda o arquivo para um repositório na internet (github)
+
+git log --author="<Nome Do Autor>"
+-- mostra todos os commits realizados por um usuario determinado
+
+git shortlog
+-- mostra a quantidade e o nome de commits realizados em um projeto
+
+git shortlog -sn 
+-- quantidade de logs
+
+git show <Número Do Commit>
+-- mostra a alteração feita nesse commit
+
+q
+-- volta para a linha de comando do git depois de um git show
+
+git diff 
+-- mostra se há alterações qua não foram submetidas
+
+git commit -am "<Descrição das alterações realizadas na alteração>"
+-- realiza o add dos arquivos e ao mesmo tempo realiza  o commit
+
+git checkout <Nome Do Arquivo>
+-- volta o arquivo desejado para a versão anterior
+
+git checkout <Nome Do Arquivo> <Nome De Outro Arquivo>
+-- volta mais de um arquivo desejado para a versão anterior
+
+git reset HEAD Readme.md
+-- retira um add de um arquivo assim podendo realizar um checkout para trazer o arquivo para sua versão anterior
+
+git reset --(soft(volta para o commit desejado e cancela o commit realizado naquela versão), mixed(volta para o commit desejado e cancela o COMMIT e os ADDs) ou hard(volta para o commit desejado sem cancelar o commit realizado naquela versão)) <Código Da Versão>
+
